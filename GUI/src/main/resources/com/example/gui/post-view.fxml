@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1124.0" prefWidth="1558.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="190.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Trang chủ" />
+            <Menu mnemonicParsing="false" text="NFT" />
+            <Menu mnemonicParsing="false" text="Bài viết" />
+         </menus>
+      </MenuBar>
+      <TextField layoutX="376.0" layoutY="3.0" prefHeight="25.0" prefWidth="321.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.0" />
+      <Label layoutX="270.0" layoutY="7.0" text="Tìm kiếm" AnchorPane.rightAnchor="333.0" />
+      <SplitPane dividerPositions="0.65" layoutY="28.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+         <items>
+            <ScrollPane prefHeight="1030.0" prefWidth="938.0">
+               <content>
+                  <BorderPane>
+                     <center>
+                        <VBox prefHeight="0.0" prefWidth="1008.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="205.0" prefWidth="1007.0">
+                                 <items>
+                                    <Label fx:id="post_title" alignment="CENTER" contentDisplay="CENTER" prefHeight="115.0" prefWidth="859.0" text="Tiêu đề" wrapText="true">
+                                       <font>
+                                          <Font size="48.0" />
+                                       </font>
+                                    </Label>
+                                    <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0">
+                                       <items>
+                                          <Label fx:id="post_author" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="859.0" text="Tác giả" wrapText="true">
+                                             <font>
+                                                <Font size="32.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="post_date" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="859.0" text="Ngày xuất bản" wrapText="true">
+                                             <font>
+                                                <Font size="32.0" />
+                                             </font>
+                                          </Label>
+                                       </items>
+                                    </SplitPane>
+                                    <Label fx:id="post_contact" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="1073.0" text="Tương tác" wrapText="true">
+                                       <font>
+                                          <Font size="33.0" />
+                                       </font>
+                                    </Label>
+                                 </items>
+                              </SplitPane>
+                              <SplitPane dividerPositions="0.5" orientation="VERTICAL">
+                                 <items>
+                                    <Label fx:id="post_author1" contentDisplay="CENTER" prefHeight="47.0" prefWidth="1008.0" text="Nội dung" wrapText="true">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fx:id="post_content" strokeType="OUTSIDE" strokeWidth="0.0" text="Democratizing and Monetizing Art: NFTs as Catalysts for ChangeNFTs bring about a democratization of the art market, redefining the relationship between artists and buyers. By enabling direct sales between creators and consumers, NFT empowers artists to showcase their work on a global scale without the need for intermediaries. This decentralized approach ensures that art is not confined to exclusive galleries but can reach a diverse and expansive audience worldwide.The global canvas facilitated by NFT allows artists to break free from traditional constraints, fostering cultural exchange and appreciation on an unprecedented scale. Buyers, in turn, gain access to a unique array of digital art pieces, each with its own story and significance.Unique Sports Collectibles: NFTs Strengthening Fan BondsNFTs have emerged as a powerful tool in the sports industry, enhancing fan engagement and fostering a sense of community. Enthusiasts can now own exclusive sports collectibles, ranging from game-worn jerseys to signed memorabilia, as tokenized assets. This ownership extends beyond mere souvenirs, creating a new dimension of fan loyalty and interaction.The introduction of limited edition NFTs by athletes further deepens the connection between sports stars and their fan base. These digital collectibles serve as a bridge, allowing fans to express their support in a tangible and unique way while creating a community around shared sports experiences." wrappingWidth="1007.4735450744629">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Text>
+                                 </items>
+                              </SplitPane>
+                              <VBox prefHeight="0.0" prefWidth="1008.0">
+                                 <children>
+                                    <Label text="Tags">
+                                       <font>
+                                          <Font size="37.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox fx:id="post_tags" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Hyperlink fx:id="tag_1" text="#1">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="tag_2" layoutX="10.0" layoutY="10.0" text="#2">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="tag_3" layoutX="52.0" layoutY="10.0" text="#3">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="tag_4" layoutX="93.0" layoutY="10.0" text="#4">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </center>
+                     <top>
+                        <Pane prefHeight="8.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </top>
+                     <left>
+                        <Pane prefHeight="314.0" prefWidth="8.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Pane prefHeight="314.0" prefWidth="8.0" BorderPane.alignment="CENTER" />
+                     </right>
+                     <bottom>
+                        <Pane prefHeight="8.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
+                     </bottom>
+                  </BorderPane>
+               </content>
+            </ScrollPane>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="1094.0" prefWidth="371.0">
+               <items>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="238.0" prefWidth="543.0">
+                     <items>
+                        <Label text="Gần đây">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane>
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="13.0" prefHeight="492.0" prefWidth="530.0">
+                                       <children>
+                                          <Hyperlink fx:id="recent_post_1" text="Bài viết 1" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="recent_post_2" layoutX="10.0" layoutY="10.0" text="Bài viết 2" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="recent_post_3" layoutX="10.0" layoutY="55.0" text="Bài viết 3" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="recent_post_4" layoutX="10.0" layoutY="100.0" text="Bài viết 4" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="recent_post_5" layoutX="10.0" layoutY="144.0" text="Bài viết 5" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </items>
+                  </SplitPane>
+                  <SplitPane dividerPositions="0.5" layoutX="10.0" layoutY="10.0" orientation="VERTICAL" prefHeight="238.0" prefWidth="543.0">
+                     <items>
+                        <Label text="Được ưa chuộng">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane>
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="13.0" prefHeight="492.0" prefWidth="530.0">
+                                       <children>
+                                          <Hyperlink fx:id="favourite_1" text="#1" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_2" layoutX="10.0" layoutY="10.0" text="#2" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_3" layoutX="10.0" layoutY="55.0" text="#3" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_4" layoutX="10.0" layoutY="100.0" text="#4" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_5" layoutX="10.0" layoutY="144.0" text="#5" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_6" layoutX="10.0" layoutY="189.0" text="#6" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_7" layoutX="10.0" layoutY="234.0" text="#7" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_8" layoutX="10.0" layoutY="279.0" text="#8" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_9" layoutX="10.0" layoutY="324.0" text="#9" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                          <Hyperlink fx:id="favourite_10" layoutX="10.0" layoutY="368.0" text="#10" underline="true" wrapText="true">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </items>
+                  </SplitPane>
+               </items>
+            </SplitPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
