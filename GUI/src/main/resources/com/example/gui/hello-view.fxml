@@ -4,31 +4,21 @@
 <?import javafx.scene.control.ContextMenu?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1124.0" prefWidth="1558.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="190.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0">
-            <menus>
-                <Menu mnemonicParsing="false" text="Trang chủ" />
-                <Menu mnemonicParsing="false" text="NFT" />
-                <Menu mnemonicParsing="false" text="Bài viết" />
-            </menus>
-        </MenuBar>
-        <SplitPane dividerPositions="0.3257372654155496" layoutX="3.0" layoutY="26.0" orientation="VERTICAL" prefHeight="776.0" prefWidth="652.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+        <SplitPane dividerPositions="0.3257372654155496" layoutY="65.0" orientation="VERTICAL" prefHeight="1060.0" prefWidth="1558.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
             <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="268.0" prefWidth="1556.0">
                     <children>
-                        <ListView layoutX="-1.0" layoutY="28.0" prefHeight="232.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="28.0">
+                        <ListView layoutY="51.0" prefHeight="290.0" prefWidth="1556.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
                             <contextMenu>
                                 <ContextMenu>
                                     <items>
@@ -37,9 +27,9 @@
                                 </ContextMenu>
                             </contextMenu>
                         </ListView>
-                        <Label layoutX="14.0" layoutY="-2.0" text="Hệ thống thu thập dữ liệu NFT">
+                        <Label layoutX="25.0" layoutY="6.0" text="Hệ thống thu thập dữ liệu NFT">
                             <font>
-                                <Font size="22.0" />
+                                <Font size="30.0" />
                             </font>
                         </Label>
                     </children>
@@ -50,18 +40,38 @@
                             <items>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                                     <children>
-                                        <TableView layoutX="65.0" prefHeight="677.0" prefWidth="774.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <TableView layoutX="65.0" prefHeight="604.0" prefWidth="774.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                             <columns>
-                                                <TableColumn prefWidth="235.0" text="Bộ sưu tập NFT" />
-                                                <TableColumn prefWidth="237.0" text="Giá sàn" />
-                                                <TableColumn prefWidth="301.0" text="Khối lượng" />
+                                                <TableColumn prefWidth="442.0" text="Bộ sưu tập NFT" />
+                                                <TableColumn prefWidth="168.0" text="Giá sàn" />
+                                                <TableColumn prefWidth="163.0" text="Khối lượng" />
                                             </columns>
                                         </TableView>
+                                        <Label layoutX="350.0" layoutY="611.0" text="Xem thêm" AnchorPane.bottomAnchor="17.0">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
                                     </children>
                                 </AnchorPane>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="430.0" prefWidth="333.0">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="728.0">
                                     <children>
-                                        <TitledPane layoutX="314.0" layoutY="118.0" prefHeight="677.0" prefWidth="774.0" text="Hashtag, tag, keyword" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                        <Label layoutX="14.0" layoutY="7.0">
+                                            <font>
+                                                <Font size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <TableView layoutX="-4.0" layoutY="38.0" prefHeight="604.0" prefWidth="774.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                                <TableColumn prefWidth="563.0" text="Hashtags, tags nổi bật" />
+                                                <TableColumn minWidth="0.0" prefWidth="196.0" text="Số lượng bài viết" />
+                                            </columns>
+                                        </TableView>
+                                        <Label layoutX="369.0" layoutY="608.0" text="Xem thêm" AnchorPane.bottomAnchor="17.0">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Label>
                                     </children>
                                 </AnchorPane>
                             </items>
@@ -76,7 +86,25 @@
                 </AnchorPane>
             </items>
         </SplitPane>
-        <TextField layoutX="376.0" layoutY="3.0" prefHeight="25.0" prefWidth="321.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.0" />
-        <Label layoutX="270.0" layoutY="7.0" text="Tìm kiếm" AnchorPane.rightAnchor="333.0" />
+        <TextField layoutX="1196.0" layoutY="18.0" prefHeight="26.0" prefWidth="348.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="18.0" />
+        <Label layoutX="1107.0" layoutY="16.0" text="Tìm kiếm" AnchorPane.rightAnchor="370.0">
+            <font>
+                <Font size="20.0" />
+            </font></Label>
+        <Label layoutX="28.0" layoutY="14.0" text="Trang chủ">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="152.0" layoutY="14.0" text="NFT">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="229.0" layoutY="14.0" text="Bài viết">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
     </children>
 </AnchorPane>
