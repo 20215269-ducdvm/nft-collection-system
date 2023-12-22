@@ -17,6 +17,7 @@ public class HelloController {
     private Label welcomeText;
     private Label LbHomePage;
     private Label LbPost;
+    private Label LbNFT;
 
     @FXML
     protected void onHelloButtonClick() {
@@ -43,6 +44,21 @@ public class HelloController {
         // Ví dụ: Chuyển đến một trang khác
         try {
             Parent root = FXMLLoader.load(getClass().getResource("posts-view.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void NftClick(MouseEvent event) {
+        // Xử lý sự kiện khi nhấp chuột vào label
+        // Ví dụ: Chuyển đến một trang khác
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("Nft-view.fxml"));
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.setScene(scene);
